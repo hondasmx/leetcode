@@ -5,7 +5,7 @@ import java.util.List;
  * Given the root of a binary tree, return the preorder traversal of its nodes' values.
  */
 
-public class BinaryPostPreorderTraversal_145 {
+public class BinaryTreePostorderTraversal_145 {
 
     public List<Integer> postorderTraversal(TreeNode root) {
         var result = new ArrayList<Integer>();
