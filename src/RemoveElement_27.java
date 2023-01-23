@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * Given an integer array nums and an integer val, remove all occurrences of val in nums in-place.
  * The relative order of the elements may be changed.
@@ -11,18 +13,17 @@ public class RemoveElement_27 {
 
     public static void main(String[] args) {
         System.out.println(removeElement(new int[]{3, 2, 2, 3}, 3));
+//        System.out.println(removeElement(new int[]{0, 1, 2, 2, 3, 0, 4, 2}, 2));
     }
 
     public static int removeElement(int[] nums, int val) {
-        var result = new int[nums.length];
-        var numOfResults = 0;
-        for (int num : nums) {
-            if (num != val) {
-                result[numOfResults] = num;
-                numOfResults++;
+        int i = 0;
+        for (int j = 0; j < nums.length; j++) {
+            if (nums[j] != val) {
+                nums[i] = nums[j];
+                i++;
             }
         }
-        nums = result;
-        return numOfResults + 1;
+        return i;
     }
 }
