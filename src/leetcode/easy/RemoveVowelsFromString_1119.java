@@ -18,4 +18,8 @@ public class RemoveVowelsFromString_1119 {
         }
         return result.toString();
     }
+
+    public String removeVowels2(String S) {
+        return S.replaceAll("[aeiou]", "");
+    }
 }
