@@ -31,5 +31,4 @@ public class MergeStringsAlternatively_1768 {
 
         return result.toString();
     }
-
 }
